@@ -2,7 +2,7 @@ from fastapi import FastAPI, Depends
 from sqlalchemy.orm import Session
 from sqlalchemy import select
 
-from app.database import engine, SessionLocal
+from database import engine, SessionLocal
 from app.models import Base, Event, EventCreate
 from app.scraper import scrape_events  # 🔥 Import scraper
 
